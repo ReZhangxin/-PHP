@@ -20,9 +20,5 @@
 
 > 修改Listen 443 为 Listen 442（这个端口只要没被占用就可使用）
 
-
-
-
-
-
 > [xampp配置错误解决方法](http://jingyan.baidu.com/article/ad310e80fbf7fc1848f49e4d.html)
+
