@@ -3,6 +3,26 @@
 # 3.进入自己项目的文件夹 在`cmd`中运行 `php -S localhost:0915`
 # 4.访问自己的网页 `localhost:0915/admin/admin.php`
 
+## phpstudy
+
+```
+// 应用入口文件
+require 'vendor/autoload.php';
+```
+
+```
+<VirtualHost *:80>
+    DocumentRoot "文件地址"
+    ServerName test.ejijin.com
+        <Directory "文件地址">
+        Options Indexes FollowSymLinks
+        DirectoryIndex home.php index.html index.php 
+        AllowOverride All
+        Order Deny,Allow
+        Allow from all
+    </Directory>
+</VirtualHost>
+```
 
 ## 安装apache不成功
 > (OS 10048)通常每个套接字地址(协议/网络地址/端口)只允许使用一次。  : AH00072: make_sock: could not bind to address [::]:443 
